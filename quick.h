@@ -3,7 +3,7 @@
 
 template <typename T>
 int partition (T a[], int first, int last, int pivot) {
-	int value = a[pivot];
+	T value = a[pivot];
 	swap(a[pivot], a[last]);
 	pivot = first;
 	for (int i = first; i < last; i++) {
